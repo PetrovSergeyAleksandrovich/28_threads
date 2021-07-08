@@ -1,5 +1,8 @@
 #include <iostream>
+#include <vector>
 #include <thread>
+
+std::vector<std::string> history;
 
 void wait_for_call(int time, std::string name)
 {
@@ -12,9 +15,9 @@ int main()
 {
 
     int time = 3;
-    //std::cin >> time;
+    std::cin >> time;
     std::string name ="XYZ";
-    //std::cin >> name;
+    std::cin >> name;
 
     std::cout << "ID: " << std::this_thread::get_id() << std::endl;
     std::thread call(wait_for_call, time, name);

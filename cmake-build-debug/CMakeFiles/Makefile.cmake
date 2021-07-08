@@ -48,4 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/28_threads.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
+  "CMakeFiles/threads_test.dir/DependInfo.cmake"
+  "CMakeFiles/task_1.dir/DependInfo.cmake"
   )

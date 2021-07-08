@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/info/CLionProjects/28_threads/delete.cpp" "C:/Users/info/CLionProjects/28_threads/cmake-build-debug/CMakeFiles/28_threads.dir/delete.cpp.obj"
   "C:/Users/info/CLionProjects/28_threads/fast_start.cpp" "C:/Users/info/CLionProjects/28_threads/cmake-build-debug/CMakeFiles/28_threads.dir/fast_start.cpp.obj"
+  "C:/Users/info/CLionProjects/28_threads/threads_test.cpp" "C:/Users/info/CLionProjects/28_threads/cmake-build-debug/CMakeFiles/28_threads.dir/threads_test.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

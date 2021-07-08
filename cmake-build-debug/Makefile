@@ -59,17 +59,6 @@ CMAKE_BINARY_DIR = C:\Users\info\CLionProjects\28_threads\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	echo >nul && "D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache\fast: edit_cache
-
-.PHONY : edit_cache\fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -80,6 +69,17 @@ rebuild_cache:
 rebuild_cache\fast: rebuild_cache
 
 .PHONY : rebuild_cache\fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	echo >nul && "D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache\fast: edit_cache
+
+.PHONY : edit_cache\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -126,6 +126,75 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\28_threads.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\28_threads.dir\build
 .PHONY : 28_threads\fast
 
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) test
+.PHONY : test
+
+# fast build rule for target.
+test\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\build
+.PHONY : test\fast
+
+#=============================================================================
+# Target rules for targets named threads_test
+
+# Build rule for target.
+threads_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) threads_test
+.PHONY : threads_test
+
+# fast build rule for target.
+threads_test\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\threads_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\threads_test.dir\build
+.PHONY : threads_test\fast
+
+#=============================================================================
+# Target rules for targets named task_1
+
+# Build rule for target.
+task_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) task_1
+.PHONY : task_1
+
+# fast build rule for target.
+task_1\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_1.dir\build
+.PHONY : task_1\fast
+
+delete.obj: delete.cpp.obj
+
+.PHONY : delete.obj
+
+# target to build an object file
+delete.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\28_threads.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\28_threads.dir\delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\delete.cpp.obj
+.PHONY : delete.cpp.obj
+
+delete.i: delete.cpp.i
+
+.PHONY : delete.i
+
+# target to preprocess a source file
+delete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\28_threads.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\28_threads.dir\delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\delete.cpp.i
+.PHONY : delete.cpp.i
+
+delete.s: delete.cpp.s
+
+.PHONY : delete.s
+
+# target to generate assembly for a file
+delete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\28_threads.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\28_threads.dir\delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\delete.cpp.s
+.PHONY : delete.cpp.s
+
 fast_start.obj: fast_start.cpp.obj
 
 .PHONY : fast_start.obj
@@ -153,6 +222,63 @@ fast_start.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\28_threads.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\28_threads.dir\fast_start.cpp.s
 .PHONY : fast_start.cpp.s
 
+tasks\task_1.obj: tasks\task_1.cpp.obj
+
+.PHONY : tasks\task_1.obj
+
+# target to build an object file
+tasks\task_1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_1.dir\tasks\task_1.cpp.obj
+.PHONY : tasks\task_1.cpp.obj
+
+tasks\task_1.i: tasks\task_1.cpp.i
+
+.PHONY : tasks\task_1.i
+
+# target to preprocess a source file
+tasks\task_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_1.dir\tasks\task_1.cpp.i
+.PHONY : tasks\task_1.cpp.i
+
+tasks\task_1.s: tasks\task_1.cpp.s
+
+.PHONY : tasks\task_1.s
+
+# target to generate assembly for a file
+tasks\task_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_1.dir\tasks\task_1.cpp.s
+.PHONY : tasks\task_1.cpp.s
+
+threads_test.obj: threads_test.cpp.obj
+
+.PHONY : threads_test.obj
+
+# target to build an object file
+threads_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\28_threads.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\28_threads.dir\threads_test.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\threads_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\threads_test.dir\threads_test.cpp.obj
+.PHONY : threads_test.cpp.obj
+
+threads_test.i: threads_test.cpp.i
+
+.PHONY : threads_test.i
+
+# target to preprocess a source file
+threads_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\28_threads.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\28_threads.dir\threads_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\threads_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\threads_test.dir\threads_test.cpp.i
+.PHONY : threads_test.cpp.i
+
+threads_test.s: threads_test.cpp.s
+
+.PHONY : threads_test.s
+
+# target to generate assembly for a file
+threads_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\28_threads.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\28_threads.dir\threads_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\threads_test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\threads_test.dir\threads_test.cpp.s
+.PHONY : threads_test.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -162,9 +288,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 28_threads
+	@echo ... task_1
+	@echo ... test
+	@echo ... threads_test
+	@echo ... delete.obj
+	@echo ... delete.i
+	@echo ... delete.s
 	@echo ... fast_start.obj
 	@echo ... fast_start.i
 	@echo ... fast_start.s
+	@echo ... tasks/task_1.obj
+	@echo ... tasks/task_1.i
+	@echo ... tasks/task_1.s
+	@echo ... threads_test.obj
+	@echo ... threads_test.i
+	@echo ... threads_test.s
 .PHONY : help
 
 
