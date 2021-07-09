@@ -42,19 +42,19 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\info\CLionProjects\28_threads
+CMAKE_SOURCE_DIR = C:\Users\Poizone\CLionProjects\28_threads
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\info\CLionProjects\28_threads\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = C:\Users\info\CLionProjects\28_threads\cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	echo >nul && "D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	echo >nul && "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -73,7 +73,7 @@ rebuild_cache\fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	echo >nul && "D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -83,9 +83,9 @@ edit_cache\fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\info\CLionProjects\28_threads\cmake-build-debug\CMakeFiles C:\Users\info\CLionProjects\28_threads\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\CMakeFiles C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\info\CLionProjects\28_threads\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -112,6 +112,19 @@ preinstall\fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named task_2
+
+# Build rule for target.
+task_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) task_2
+.PHONY : task_2
+
+# fast build rule for target.
+task_2\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2.dir\build
+.PHONY : task_2\fast
 
 #=============================================================================
 # Target rules for targets named 28_threads
@@ -249,6 +262,33 @@ tasks\task_1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_1.dir\tasks\task_1.cpp.s
 .PHONY : tasks\task_1.cpp.s
 
+tasks\task_2.obj: tasks\task_2.cpp.obj
+
+.PHONY : tasks\task_2.obj
+
+# target to build an object file
+tasks\task_2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2.dir\tasks\task_2.cpp.obj
+.PHONY : tasks\task_2.cpp.obj
+
+tasks\task_2.i: tasks\task_2.cpp.i
+
+.PHONY : tasks\task_2.i
+
+# target to preprocess a source file
+tasks\task_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2.dir\tasks\task_2.cpp.i
+.PHONY : tasks\task_2.cpp.i
+
+tasks\task_2.s: tasks\task_2.cpp.s
+
+.PHONY : tasks\task_2.s
+
+# target to generate assembly for a file
+tasks\task_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2.dir\tasks\task_2.cpp.s
+.PHONY : tasks\task_2.cpp.s
+
 threads_test.obj: threads_test.cpp.obj
 
 .PHONY : threads_test.obj
@@ -289,6 +329,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... 28_threads
 	@echo ... task_1
+	@echo ... task_2
 	@echo ... test
 	@echo ... threads_test
 	@echo ... delete.obj
@@ -300,6 +341,9 @@ help:
 	@echo ... tasks/task_1.obj
 	@echo ... tasks/task_1.i
 	@echo ... tasks/task_1.s
+	@echo ... tasks/task_2.obj
+	@echo ... tasks/task_2.i
+	@echo ... tasks/task_2.s
 	@echo ... threads_test.obj
 	@echo ... threads_test.i
 	@echo ... threads_test.s

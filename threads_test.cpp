@@ -19,7 +19,7 @@ void my_thread()
     std::cout << std::endl;
     m.unlock();
     std::cout << "m.unlock() in my_thread" << std::endl;
-};
+}
 
 int main()
 {

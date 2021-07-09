@@ -8,24 +8,67 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task_2">
+				<Option output="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug/task_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 task_2"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task_2/fast">
+				<Option output="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug/task_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 task_2/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="28_threads">
-				<Option output="C:/Users/info/CLionProjects/28_threads/cmake-build-debug/28_threads.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option output="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug/28_threads.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
@@ -34,21 +77,20 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 28_threads"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 28_threads"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="28_threads/fast">
-				<Option output="C:/Users/info/CLionProjects/28_threads/cmake-build-debug/28_threads.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option output="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug/28_threads.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
@@ -57,31 +99,30 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 28_threads/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 28_threads/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option output="C:/Users/info/CLionProjects/28_threads/cmake-build-debug/test.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option output="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug/test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
@@ -90,21 +131,20 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 test"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 test"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test/fast">
-				<Option output="C:/Users/info/CLionProjects/28_threads/cmake-build-debug/test.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option output="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug/test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
@@ -113,21 +153,20 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 test/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 test/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="threads_test">
-				<Option output="C:/Users/info/CLionProjects/28_threads/cmake-build-debug/threads_test.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option output="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug/threads_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
@@ -136,21 +175,20 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 threads_test"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 threads_test"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="threads_test/fast">
-				<Option output="C:/Users/info/CLionProjects/28_threads/cmake-build-debug/threads_test.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option output="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug/threads_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
@@ -159,31 +197,30 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 threads_test/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 threads_test/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="task_1">
-				<Option output="C:/Users/info/CLionProjects/28_threads/cmake-build-debug/task_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option output="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug/task_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
@@ -192,21 +229,20 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 task_1"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 task_1"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="task_1/fast">
-				<Option output="C:/Users/info/CLionProjects/28_threads/cmake-build-debug/task_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/info/CLionProjects/28_threads/cmake-build-debug"/>
+				<Option output="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug/task_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Poizone/CLionProjects/28_threads/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
@@ -215,28 +251,31 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 task_1/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\info\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 task_1/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/info/CLionProjects/28_threads/delete.cpp">
+		<Unit filename="C:/Users/Poizone/CLionProjects/28_threads/delete.cpp">
 			<Option target="28_threads"/>
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="C:/Users/info/CLionProjects/28_threads/fast_start.cpp">
+		<Unit filename="C:/Users/Poizone/CLionProjects/28_threads/fast_start.cpp">
 			<Option target="28_threads"/>
 		</Unit>
-		<Unit filename="C:/Users/info/CLionProjects/28_threads/tasks/task_1.cpp">
+		<Unit filename="C:/Users/Poizone/CLionProjects/28_threads/tasks/task_1.cpp">
 			<Option target="task_1"/>
 		</Unit>
-		<Unit filename="C:/Users/info/CLionProjects/28_threads/threads_test.cpp">
+		<Unit filename="C:/Users/Poizone/CLionProjects/28_threads/tasks/task_2.cpp">
+			<Option target="task_2"/>
+		</Unit>
+		<Unit filename="C:/Users/Poizone/CLionProjects/28_threads/threads_test.cpp">
 			<Option target="28_threads"/>
 			<Option target="threads_test"/>
 		</Unit>
-		<Unit filename="C:/Users/info/CLionProjects/28_threads/CMakeLists.txt">
+		<Unit filename="C:/Users/Poizone/CLionProjects/28_threads/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
