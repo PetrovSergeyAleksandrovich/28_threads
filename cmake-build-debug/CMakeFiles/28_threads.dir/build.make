@@ -37,19 +37,19 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Poizone\CLionProjects\28_threads
+CMAKE_SOURCE_DIR = C:\Users\info\CLionProjects\28_threads
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\info\CLionProjects\28_threads\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles\28_threads.dir\depend.make
@@ -62,59 +62,59 @@ include CMakeFiles\28_threads.dir\flags.make
 
 CMakeFiles\28_threads.dir\fast_start.cpp.obj: CMakeFiles\28_threads.dir\flags.make
 CMakeFiles\28_threads.dir\fast_start.cpp.obj: ..\fast_start.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/28_threads.dir/fast_start.cpp.obj"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\28_threads.dir\fast_start.cpp.obj /FdCMakeFiles\28_threads.dir\ /FS -c C:\Users\Poizone\CLionProjects\28_threads\fast_start.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\info\CLionProjects\28_threads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/28_threads.dir/fast_start.cpp.obj"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\28_threads.dir\fast_start.cpp.obj /FdCMakeFiles\28_threads.dir\ /FS -c C:\Users\info\CLionProjects\28_threads\fast_start.cpp
 <<
 
 CMakeFiles\28_threads.dir\fast_start.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/28_threads.dir/fast_start.cpp.i"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe > CMakeFiles\28_threads.dir\fast_start.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Poizone\CLionProjects\28_threads\fast_start.cpp
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\28_threads.dir\fast_start.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\info\CLionProjects\28_threads\fast_start.cpp
 <<
 
 CMakeFiles\28_threads.dir\fast_start.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/28_threads.dir/fast_start.cpp.s"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\28_threads.dir\fast_start.cpp.s /c C:\Users\Poizone\CLionProjects\28_threads\fast_start.cpp
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\28_threads.dir\fast_start.cpp.s /c C:\Users\info\CLionProjects\28_threads\fast_start.cpp
 <<
 
 CMakeFiles\28_threads.dir\delete.cpp.obj: CMakeFiles\28_threads.dir\flags.make
 CMakeFiles\28_threads.dir\delete.cpp.obj: ..\delete.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/28_threads.dir/delete.cpp.obj"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\28_threads.dir\delete.cpp.obj /FdCMakeFiles\28_threads.dir\ /FS -c C:\Users\Poizone\CLionProjects\28_threads\delete.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\info\CLionProjects\28_threads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/28_threads.dir/delete.cpp.obj"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\28_threads.dir\delete.cpp.obj /FdCMakeFiles\28_threads.dir\ /FS -c C:\Users\info\CLionProjects\28_threads\delete.cpp
 <<
 
 CMakeFiles\28_threads.dir\delete.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/28_threads.dir/delete.cpp.i"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe > CMakeFiles\28_threads.dir\delete.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Poizone\CLionProjects\28_threads\delete.cpp
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\28_threads.dir\delete.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\info\CLionProjects\28_threads\delete.cpp
 <<
 
 CMakeFiles\28_threads.dir\delete.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/28_threads.dir/delete.cpp.s"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\28_threads.dir\delete.cpp.s /c C:\Users\Poizone\CLionProjects\28_threads\delete.cpp
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\28_threads.dir\delete.cpp.s /c C:\Users\info\CLionProjects\28_threads\delete.cpp
 <<
 
 CMakeFiles\28_threads.dir\threads_test.cpp.obj: CMakeFiles\28_threads.dir\flags.make
 CMakeFiles\28_threads.dir\threads_test.cpp.obj: ..\threads_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/28_threads.dir/threads_test.cpp.obj"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\28_threads.dir\threads_test.cpp.obj /FdCMakeFiles\28_threads.dir\ /FS -c C:\Users\Poizone\CLionProjects\28_threads\threads_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\info\CLionProjects\28_threads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/28_threads.dir/threads_test.cpp.obj"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\28_threads.dir\threads_test.cpp.obj /FdCMakeFiles\28_threads.dir\ /FS -c C:\Users\info\CLionProjects\28_threads\threads_test.cpp
 <<
 
 CMakeFiles\28_threads.dir\threads_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/28_threads.dir/threads_test.cpp.i"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe > CMakeFiles\28_threads.dir\threads_test.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Poizone\CLionProjects\28_threads\threads_test.cpp
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\28_threads.dir\threads_test.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\info\CLionProjects\28_threads\threads_test.cpp
 <<
 
 CMakeFiles\28_threads.dir\threads_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/28_threads.dir/threads_test.cpp.s"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\28_threads.dir\threads_test.cpp.s /c C:\Users\Poizone\CLionProjects\28_threads\threads_test.cpp
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\28_threads.dir\threads_test.cpp.s /c C:\Users\info\CLionProjects\28_threads\threads_test.cpp
 <<
 
 # Object files for target 28_threads
@@ -131,9 +131,9 @@ CMakeFiles\28_threads.dir\threads_test.cpp.s: cmake_force
 28_threads.exe: CMakeFiles\28_threads.dir\threads_test.cpp.obj
 28_threads.exe: CMakeFiles\28_threads.dir\build.make
 28_threads.exe: CMakeFiles\28_threads.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable 28_threads.exe"
-	"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\28_threads.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\28_threads.dir\objects1.rsp @<<
- /out:28_threads.exe /implib:28_threads.lib /pdb:C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\28_threads.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\info\CLionProjects\28_threads\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable 28_threads.exe"
+	"D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\28_threads.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\28_threads.dir\objects1.rsp @<<
+ /out:28_threads.exe /implib:28_threads.lib /pdb:C:\Users\info\CLionProjects\28_threads\cmake-build-debug\28_threads.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
@@ -146,6 +146,6 @@ CMakeFiles\28_threads.dir\clean:
 .PHONY : CMakeFiles\28_threads.dir\clean
 
 CMakeFiles\28_threads.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\Poizone\CLionProjects\28_threads C:\Users\Poizone\CLionProjects\28_threads C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug C:\Users\Poizone\CLionProjects\28_threads\cmake-build-debug\CMakeFiles\28_threads.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\info\CLionProjects\28_threads C:\Users\info\CLionProjects\28_threads C:\Users\info\CLionProjects\28_threads\cmake-build-debug C:\Users\info\CLionProjects\28_threads\cmake-build-debug C:\Users\info\CLionProjects\28_threads\cmake-build-debug\CMakeFiles\28_threads.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles\28_threads.dir\depend
 
