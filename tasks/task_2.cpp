@@ -5,6 +5,7 @@
 #include <cassert>
 
 std::mutex mutex;
+std::mutex input_mutex;
 std::mutex m_train;
 std::mutex m_terminal;
 
@@ -59,6 +60,7 @@ public:
 class Terminal
 {
 private:
+    bool hasTrain = false;
     Train* trainAtDepo = nullptr;
 public:
     void getTrain(Train* inTrain)
@@ -76,58 +78,50 @@ public:
         return  trainAtDepo;
     }
 
-    void getTrainAtTerminal()
-    {
-        if(trainAtDepo != nullptr)
-        {
-            std::cout << "check_void getTrainAtTerminal()" << std::endl;
-            std::cout << trainAtDepo->getName() << std::endl;
-        }
-    }
 };
 
 void moving_to_depo(Train* inTrain, double inDistance, Terminal* inTerminal)
 {
     while(inDistance >= 0)
     {
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+
+        if(inDistance > 0)
+        {
+            mutex.lock();
+            std::cout << "TRAIN " << inTrain->getName() << " Distance " << inDistance << std::endl;
+            mutex.unlock();
+        }
+
         inDistance -= inTrain->getSpeed();
         if(inDistance <= 0)
         {
             inDistance = 0;
             if(inTerminal->getTrainPtr() == nullptr)
             {
-                m_terminal.lock();
+                m_terminal.lock(); // access to Terminal
                 inTerminal->getTrain(inTrain);
-                std::string command = "d";
-                while(true)
-                {
-                    std::string tmp;
-                    std::cout << "Train " << inTrain->getName() << " at DEPO" << std::endl;
-                    std::cout << "Type 'd' to send it: ";
-                    std::cin >> tmp;
 
-                    if(tmp == command)
-                    {
-                        inTerminal->sendTrain();
-                        m_terminal.unlock();
-                        return;
-                    }
+                std::cout << "Train " << inTrain->getName() << " at DEPO" << std::endl;
+                std::cout << "Type 'd' to send it: ";
+                std::string command = "d";
+                std::string tmp;
+                std::cin >> tmp;
+                if(tmp == command)
+                {
+                    inTerminal->sendTrain();
+                    std::cout << "Train " << inTrain->getName() << " left the Depo" << std::endl;
+                    m_terminal.unlock(); // close access to Terminal after command
+                    return;
                 }
             }
-            else if(inTerminal->getTrainPtr() != nullptr)
+
+            if(inTerminal->getTrainPtr() == nullptr)
             {
                 mutex.lock();
                 std::cout << "Train " << inTrain->getName() << " is waiting to get to Depo" << std::endl;
                 mutex.unlock();
             }
-        }
-
-        std::this_thread::sleep_for(std::chrono::seconds(1));
-        if(inDistance > 0)
-        {
-            mutex.lock();
-            std::cout << "TRAIN " << inTrain->getName() << " Distance " << inDistance << std::endl;
-            mutex.unlock();
         }
     }
 }
@@ -159,7 +153,7 @@ int main()
     }
     std::cout << "THREADS JOINED" << std::endl  << std::endl;
 
-    std::cout << "check_1" << std::endl;
+
 
     delete[] trains;
     return 0;
