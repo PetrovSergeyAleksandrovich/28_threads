@@ -82,6 +82,9 @@ public:
 
 void moving_to_depo(Train* inTrain, double inDistance, Terminal* inTerminal)
 {
+
+    bool flag = false;
+
     while(inDistance >= 0)
     {
         std::this_thread::sleep_for(std::chrono::seconds(1));
@@ -96,6 +99,7 @@ void moving_to_depo(Train* inTrain, double inDistance, Terminal* inTerminal)
         inDistance -= inTrain->getSpeed();
         if(inDistance <= 0)
         {
+
             inDistance = 0;
             if(inTerminal->getTrainPtr() == nullptr)
             {
@@ -103,7 +107,7 @@ void moving_to_depo(Train* inTrain, double inDistance, Terminal* inTerminal)
                 inTerminal->getTrain(inTrain);
 
                 std::cout << "Train " << inTrain->getName() << " at DEPO" << std::endl;
-                std::cout << "Type 'd' to send it: ";
+                std::cout << "Type 'd' to send Train from Depo: " << std::endl;
                 std::string command = "d";
                 std::string tmp;
                 std::cin >> tmp;
@@ -114,13 +118,19 @@ void moving_to_depo(Train* inTrain, double inDistance, Terminal* inTerminal)
                     m_terminal.unlock(); // close access to Terminal after command
                     return;
                 }
+
             }
 
-            if(inTerminal->getTrainPtr() == nullptr)
+            if(!flag)
             {
-                mutex.lock();
-                std::cout << "Train " << inTrain->getName() << " is waiting to get to Depo" << std::endl;
-                mutex.unlock();
+                if(inTerminal->getTrainPtr() != nullptr)
+                {
+                    mutex.lock();
+                    std::cout << "Train " << inTrain->getName() << " is waiting to get to Depo" << std::endl;
+                    mutex.unlock();
+                    flag = true;
+                }
+
             }
         }
     }
