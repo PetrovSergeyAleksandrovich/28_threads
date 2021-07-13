@@ -5,3 +5,4 @@ C:/Users/info/CLionProjects/28_threads/cmake-build-debug/CMakeFiles/test.dir
 C:/Users/info/CLionProjects/28_threads/cmake-build-debug/CMakeFiles/threads_test.dir
 C:/Users/info/CLionProjects/28_threads/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/info/CLionProjects/28_threads/cmake-build-debug/CMakeFiles/task_1.dir
+C:/Users/info/CLionProjects/28_threads/cmake-build-debug/CMakeFiles/task_3.dir
