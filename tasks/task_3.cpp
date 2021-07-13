@@ -13,7 +13,7 @@ void getOrder(std::vector<std::string>* inList, int *inTotalDeliveries)
 {
     while(true)
     {
-        if(*inTotalDeliveries >= 10) break;
+        if(*inTotalDeliveries >= 9) break;
         std::srand(time(nullptr));
         int rand_dish = (1 + (rand()) % 5);
 
@@ -42,7 +42,7 @@ void kitchen(std::vector<std::string>* inOrders, std::vector<std::string>* inToD
 {
     while(true)
     {
-        if(*inTotalDeliveries >= 10) break;
+        if(*inTotalDeliveries >= 9) break;
         print.lock();
         std::cout << "Current list of orders: " << inOrders->size() << std::endl;
         for(int i = 0; i < inOrders->size(); i++)
